@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>  
+<head>
+  <title>Tarfa's careers</title>
+  <style>
+    h1{
+      font-size : 40px;
+      font-family: Roboto;
+      font-weight: normal;
+      color: rgb[50.50.50];
+      text-align: center;
+    }
+    #baba{
+      width:100%;
+      height:360px;
+      object-fit: cover;
+    }
+    h2{
+      font-family:Roboto;
+      font-size:32px;
+      color: rgb[10..100.100];
+      text-align: center;
+      font-weight: normal;
+    }
+    .textbody {
+      font-family: Roboto;
+      color: rgb[80.80.80];
+      
+    }
+    #container{
+      max-width: 720px;
+      margin: 0 auto 0 auto;
+    }
+  </style>
+</head>
+  <body
+    <div id="container"> 
+    <h1>Tarfa's Careers</h1>
+    <img id="baba"src="https://8be4bf7c-852f-40d4-877d-2a9283251d8e-00-2te0zs8fa34mt.picard.replit.dev/static/baba.jpg" />
+    <h2>About Us</h2>
+      <p class="textbody">
+    <p>
+      Welcome to Tarfa's Careers , your personalized gateway to career success. We are a professional platform dedicated to helping job seekers present themselves with confidence and clarity in today’s competitive job market. Our mission is to empower individuals with the tools they need to stand out—through expertly crafted resumes, tailored cover letters, and strategic career advice.
+
+      With a keen understanding of recruitment trends and employer expectations, we bring a human-centered approach to job applications. Whether you're a recent graduate, a mid-career professional, or making a career pivot, our services are designed to showcase your unique strengths and potential.
+    </p>
+  <h2 class= "text-center mt-2 mt-4">Job Openings</h2>
+  <P>
+    <div>
+    {% for job in jobs %}
+      {%include 'jobitem.html' %}
+    {% endfor %}
+    </div>
+  </p>
+      <div style="text-align: center;"> 
+  <button class="btn btn-primary btn-lg">Contact Us</button>
+        <p>
+        Copyright 2025, Tarfa's Careers.
+        </p>
+  </div>
+    </body>
+</html>
